@@ -9,7 +9,7 @@
         .hero-section { background-color: #2E7D32; color: white; padding: 60px 0; }
         .tech-section { border-left: 5px solid #1565C0; padding-left: 20px; }
         .btn-custom { background-color: #1565C0; color: white; }
-        .btn-custom:hover { background-color: #0d47a1; color: white; }
+        .card-img-top { height: 200px; object-fit: cover; }
     </style>
 </head>
 <body>
@@ -35,32 +35,46 @@
             <div class="col-md-8">
                 <section class="mb-5">
                     <h2 class="text-success">Manifiesto: Tecnología para la Vida</h2>
-                    <p class="lead text-muted">
-                        "En la Escuela Secundaria Técnica No. 18, creemos que la ingeniería no nace de la abundancia, sino de la necesidad y el ingenio."
-                    </p>
-                    <p>
-                        Este proyecto transforma hardware reciclado (motores de impresoras y fuentes de PC) en sistemas de riego autónomos. 
-                        Buscamos que cada alumno sea capaz de sembrar salud usando la tecnología como puente hacia la autosustentabilidad.
-                    </p>
+                    <p>Este proyecto transforma hardware reciclado en sistemas de riego autónomos, promoviendo la cultura de la autosustentabilidad en la comunidad escolar.</p>
                 </section>
 
-                <section class="tech-section mb-5">
-                    <h3 class="text-primary">Avance del Proyecto</h3>
-                    <ul>
-                        <li><strong>Construcción:</strong> Riel de impresora adaptado con motor de pasos.</li>
-                        <li><strong>Control:</strong> Automatización mediante Arduino y relevadores.</li>
-                        <li><strong>Energía:</strong> Reutilización de fuente ATX de 5V.</li>
-                    </ul>
+                <section class="mb-5">
+                    <h3 class="text-success mb-4">Evidencia del Proyecto</h3>
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/fuente_pc.jpg" class="card-img-top" alt="Fuente ATX Reciclada">
+                                <div class="card-body p-2 text-center">
+                                    <small class="text-muted">Fuente ATX Reciclada</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/riel_movil.jpg" class="card-img-top" alt="Riel de Impresora">
+                                <div class="card-body p-2 text-center">
+                                    <small class="text-muted">Mecanismo de Riel Móvil</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/sensor_tierra.jpg" class="card-img-top" alt="Sensor de Humedad">
+                                <div class="card-body p-2 text-center">
+                                    <small class="text-muted">Sensor e Instalación</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
 
             <div class="col-md-4">
-                <div class="card shadow-sm border-0 bg-light">
+                <div class="card shadow-sm border-0 bg-light mb-4">
                     <div class="card-body text-center">
                         <h5 class="card-title">Responsable</h5>
                         <p class="card-text"><strong>MTI. Francisco Cota Toledo</strong></p>
                         <hr>
-                        <p class="small text-muted">Documentación Técnico-Pedagógica disponible:</p>
                         <a href="docs/informe_riego.pdf" class="btn btn-custom w-100" target="_blank">
                             Descargar Informe LaTeX
                         </a>
@@ -71,10 +85,7 @@
     </main>
 
     <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-0">Proyecto de Vida Saludable | El Espinal, Oaxaca 2026</p>
-            <small>Desarrollado en GitHub Pages para la comunidad EST 18</small>
-        </div>
+        <p class="mb-0">Proyecto de Vida Saludable | El Espinal, Oaxaca 2026</p>
     </footer>
 
 </body>
